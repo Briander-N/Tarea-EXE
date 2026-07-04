@@ -11,7 +11,7 @@ public class Conexion {
 
     private static final String user = "root";
 
-    private static final String password = "TU_CONTRASEÑA_DE_RAILWAY";
+    private static final String password = "pfcrGCopVupmOkbHlhpcYwXwiFuJznHt";
 
     public static Connection getConnection() throws SQLException {
         return DriverManager.getConnection(url, user, password);
