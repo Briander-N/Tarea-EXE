@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="620.0" prefWidth="500.0"
+      xmlns="http://javafx.com/javafx/17.0.12"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.grupal.crudController">
+
+    <children>
+
+        <Label text="SISTEMA DE REGISTRO DE LIBROS"
+               alignment="CENTER"
+               prefWidth="450"
+               style="-fx-font-size:18px; -fx-font-weight:bold;"/>
+
+        <Label text="Título"/>
+        <TextField fx:id="txtTitulo"/>
+
+        <Label text="Autor"/>
+        <TextField fx:id="txtAutor"/>
+
+        <Label text="Año de publicación"/>
+        <TextField fx:id="txtAnio"/>
+
+        <Label text="ISBN"/>
+        <TextField fx:id="txtIsbn"/>
+
+        <Label text="Género"/>
+        <ComboBox fx:id="cbGenero" prefWidth="180"/>
+
+        <Label text="LISTA DE LIBROS"/>
+
+        <Label fx:id="lblAlerta"/>
+
+        <TableView fx:id="tblLibros" prefHeight="220">
+            <columns>
+                <TableColumn fx:id="colId" text="ID" prefWidth="50"/>
+                <TableColumn fx:id="colTitulo" text="Título" prefWidth="150"/>
+                <TableColumn fx:id="colAutor" text="Autor" prefWidth="120"/>
+                <TableColumn fx:id="colAnio" text="Año" prefWidth="70"/>
+                <TableColumn fx:id="colIsbn" text="ISBN" prefWidth="120"/>
+                <TableColumn fx:id="colGenero" text="Género" prefWidth="100"/>
+            </columns>
+
+            <VBox.margin>
+                <Insets bottom="20"/>
+            </VBox.margin>
+
+        </TableView>
+
+        <HBox spacing="20" alignment="CENTER">
+            <children>
+                <Button fx:id="btnGuardar"
+                        text="Guardar"
+                        onAction="#guardarLibro"/>
+
+                <Button fx:id="btnEditar"
+                        text="Editar"
+                        onAction="#editarLibro"/>
+
+                <Button fx:id="btnEliminar"
+                        text="Eliminar"
+                        onAction="#eliminarLibro"/>
+
+                <Button fx:id="btnLimpiar"
+                        text="Limpiar"
+                        onAction="#limpiarCampos"/>
+            </children>
+        </HBox>
+
+    </children>
+
+    <padding>
+        <Insets top="25" right="25" bottom="25" left="25"/>
+    </padding>
+
+</VBox>
