@@ -54,11 +54,13 @@ src
       │      └── org.example.prueba_2
       │              Conexion.java
       │              Libro.java
-      │              crudController.java
+      │              LoginController.java
+      |              crudController.java
       │              HelloApplication.java
       │
       └── resources
              └── org.example.prueba_2
+                     Login.fxml
                      crud.fxml
 ```
 
@@ -103,7 +105,19 @@ Además de:
 
 ---
 
-# Paso 5. Diseñar la Interfaz
+# Paso 5. Diseñar las Interfaces
+
+Crear un archivo **Login.fxml**.
+
+La interfaz contiene:
+
+- TextField para el usuario
+- PasswordField para la contraseña
+- Botones:
+  - Ingresar
+  - Salir
+
+--
 
 Crear un archivo **crud.fxml**.
 
@@ -138,7 +152,16 @@ Estas columnas serán enlazadas con los atributos de la clase **Libro** mediante
 
 ---
 
-# Paso 7. Implementar el Controlador
+# Paso 7. Implementar los Controladores
+Crear la clase **LoginController.java**.
+
+En ella se implementan las operaciones:
+
+- Verificacion de datos.
+- Alertas de Elementos vacios o invalidos.
+- Acciones de los botones.
+
+--
 
 Crear la clase **crudController.java**.
 
