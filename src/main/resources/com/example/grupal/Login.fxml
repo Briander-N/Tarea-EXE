@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.grupal.LoginController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <Label text="Base de datos Libreria">
+        <font>
+            <Font size="15.0" />
+        </font>
+    </Label>
+    <Label text="Usuario" />
+    <TextField fx:id="user" promptText="Ingrese Usuario" />
+    <Label text="Contraseña" />
+    <PasswordField fx:id="pass" promptText="Ingrese Contraseña" />
+    <Button onAction="#Confirm" text="Ingresar" />
+    <Button mnemonicParsing="false" onAction="#ex" text="Salir" />
+</VBox>
